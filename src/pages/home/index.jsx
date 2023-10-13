@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { Navbar } from "../../components/organism/navbar";
 import { ContentLayout } from "../../layouts";
-import foto from "../../assets/luthfi.webp";
 import AOS from "aos";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { Button } from "../../components/atom/button";
+import { Helmet } from "react-helmet";
 export const Home = () => {
   useEffect(() => {
     AOS.init();
@@ -19,6 +19,10 @@ export const Home = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Luthfiahmdf</title>
+        <meta name="description" content="Home Page" />
+      </Helmet>
       <Navbar />
       <ContentLayout hMobile={`md:h-screen`}>
         <div

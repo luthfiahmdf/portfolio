@@ -1,7 +1,7 @@
-import { BsGithub } from "react-icons/bs";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 import { ContentLayout } from "../../layouts";
 import { Navbar } from "../../components/organism/navbar";
 
@@ -12,6 +12,10 @@ export const About = () => {
 
   return (
     <>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="About Page" />
+      </Helmet>
       <Navbar />
       <ContentLayout hMobile={`md:h-screen`}>
         <div

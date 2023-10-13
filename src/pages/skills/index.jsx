@@ -9,6 +9,7 @@ import {
 import { Navbar } from "../../components/organism/navbar";
 import { ContentLayout } from "../../layouts";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Aos from "aos";
 
 export const Skills = () => {
@@ -53,6 +54,10 @@ export const Skills = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Skills</title>
+        <meta name="description" content="Skills Page" />
+      </Helmet>
       <Navbar />
       <ContentLayout>
         <div className="text-xl md:text-2xl mb-[10vh] md:mb-0 gap-6 flex-wrap font-semibold items-center justify-center font-mono gap-y-5 flex  mt-[18vh] md:mt-[6vh] w-[80vw] md:w-[70%] lg:w-[50vw] dark:text-slate-200">
