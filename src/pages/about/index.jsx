@@ -28,10 +28,6 @@ export const About = () => {
             TailwindCSS and ReactJS and still learning about those two in about
             6 months
           </p>
-          <p className="mt-4">
-            Here are my projects on Github that i worked for in this past 6
-            months of learning TailwindCSS and ReactJS
-          </p>
         </div>
       </div>
     </>
