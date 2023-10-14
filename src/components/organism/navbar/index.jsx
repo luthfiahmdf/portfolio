@@ -61,13 +61,15 @@ export const Navbar = () => {
     <header
       className={`w-full flex fixed items-center justify-between md:px-16 px-8 font-semibold bg-white dark:bg-zinc-900 duration-300 ease-out text-slate-500  h-[8vh] z-50`}
     >
-      <figure>
-        <figcaption
-          className={`text-lg w-[8vw]  font-mono font-bold dark:text-slate-200`}
-        >
-          luthfiahmdf
-        </figcaption>
-      </figure>
+      <NavLink to="/">
+        <figure>
+          <figcaption
+            className={`text-lg w-[8vw]  font-mono font-bold dark:text-slate-200`}
+          >
+            luthfiahmdf
+          </figcaption>
+        </figure>
+      </NavLink>
       <nav className="hidden md:block">
         <ul className="flex gap-x-6">
           {navList.map((nav) => (

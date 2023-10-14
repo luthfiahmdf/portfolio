@@ -7,7 +7,6 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { Navbar } from "../../components/organism/navbar";
-import { ContentLayout } from "../../layouts";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Aos from "aos";
@@ -59,8 +58,8 @@ export const Skills = () => {
         <meta name="description" content="Skills Page" />
       </Helmet>
       <Navbar />
-      <ContentLayout>
-        <div className="text-xl md:text-2xl mb-[10vh] md:mb-0 gap-6 flex-wrap font-semibold items-center justify-center font-mono gap-y-5 flex  mt-[18vh] md:mt-[6vh] w-[80vw] md:w-[70%] lg:w-[50vw] dark:text-slate-200">
+      <div className="w-full flex min-h-screen justify-center items-center bg-zinc-900">
+        <div className="text-xl md:text-2xl my-[15vh] md:mb-0 gap-6 flex-wrap font-semibold items-center justify-center font-mono gap-y-5 flex   md:mt-[6vh] w-[80vw] md:w-[70%] lg:w-[50vw] dark:text-slate-200">
           {skill?.map((item, index) => (
             <div
               key={index}
@@ -74,11 +73,13 @@ export const Skills = () => {
               >
                 {item.icon}
               </p>
-              <p data-aos="fade-down">{item.name}</p>
+              <p className="text-[1rem]" data-aos="fade-down">
+                {item.name}
+              </p>
             </div>
           ))}
         </div>
-      </ContentLayout>
+      </div>
     </>
   );
 };

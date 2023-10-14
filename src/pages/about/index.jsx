@@ -1,14 +1,10 @@
-import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
-import { ContentLayout } from "../../layouts";
 import { Navbar } from "../../components/organism/navbar";
 
 export const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  AOS.init();
 
   return (
     <>
@@ -17,11 +13,10 @@ export const About = () => {
         <meta name="description" content="About Page" />
       </Helmet>
       <Navbar />
-      <ContentLayout hMobile={`md:h-screen`}>
+      <div className="flex flex-col  gap-x-5 items-center justify-center w-full min-h-screen bg-zinc-900 ">
         <div
-          className="text-xl md:text-2xl  font-semibold font-mono gap-y-5 flex flex-col mt-[18vh] md:mt-[6vh] w-[80vw] md:w-[70%] lg:w-[50vw] dark:text-slate-200"
           data-aos="fade-down"
-          data-aos-once="true"
+          className="text-xl text-slate-50 my-[10vh] font-mono md:text-2xl 2xl:w-[50%] md:w-[80%] w-[80%] font-semibold"
         >
           <p>
             Hi! My name is Luthfi Ahmad Fauzi. Currently, I am a student at
@@ -38,7 +33,7 @@ export const About = () => {
             months of learning TailwindCSS and ReactJS
           </p>
         </div>
-      </ContentLayout>
+      </div>
     </>
   );
 };

@@ -1,57 +1,10 @@
-import { AiOutlineHtml5 } from "react-icons/ai";
-import {
-  BiLogoCss3,
-  BiLogoJavascript,
-  BiLogoReact,
-  BiLogoTailwindCss,
-  BiLogoTypescript,
-} from "react-icons/bi";
+import foto from "../../assets/sertif.jpg";
 import { Navbar } from "../../components/organism/navbar";
-import { ContentLayout } from "../../layouts";
-import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Aos from "aos";
 
 export const Experience = () => {
-  const skill = [
-    {
-      name: "Html",
-      icon: (
-        <AiOutlineHtml5 className="hover:text-orange-600 duration-300 ease-in-out" />
-      ),
-    },
-    {
-      name: "Css",
-      icon: (
-        <BiLogoCss3 className="hover:text-blue-400 duration-300 ease-in-out" />
-      ),
-    },
-    {
-      name: "Javascript",
-      icon: (
-        <BiLogoJavascript className="hover:text-yellow-400 duration-300 ease-in-out" />
-      ),
-    },
-    {
-      name: "React",
-      icon: (
-        <BiLogoReact className="hover:text-[#64CCC5] duration-300 ease-in-out" />
-      ),
-    },
-    {
-      name: "TypeScript",
-      icon: (
-        <BiLogoTypescript className="hover:text-[#3178C6] duration-300 ease-in-out" />
-      ),
-    },
-    {
-      name: "TailwindCSS",
-      icon: <BiLogoTailwindCss className="hover:text-blue-400 ease-in-out" />,
-    },
-  ];
-  useEffect(() => {
-    Aos.init();
-  }, []);
+  Aos.init();
   return (
     <>
       <Helmet>
@@ -59,26 +12,35 @@ export const Experience = () => {
         <meta name="description" content="Experience Page" />
       </Helmet>
       <Navbar />
-      <ContentLayout>
-        <div className="text-xl md:text-2xl mb-[10vh] md:mb-0 gap-6 flex-wrap font-semibold items-center justify-center font-mono gap-y-5 flex  mt-[18vh] md:mt-[6vh] w-[80vw] md:w-[70%] lg:w-[50vw] dark:text-slate-200">
-          {skill?.map((item, index) => (
-            <div
-              key={index}
-              data-aos="fade-down"
-              data-aos-once="true"
-              className="flex flex-col  gap-x-5 items-center border-2 w-[70vw] md:w-[30%] lg:w-[40%] p-2 rounded-md  duration-300 ease-in-out"
-            >
-              <p
-                data-aos="fade-down"
-                className="text-[12rem] lg:text-[5rem] xl:text-[10rem] md:text-[7rem]"
-              >
-                {item.icon}
-              </p>
-              <p data-aos="fade-down">{item.name}</p>
-            </div>
-          ))}
+      <div className="w-full flex min-h-screen justify-center items-center bg-zinc-900">
+        <div className="flex w-[90%] my-[10vh] gap-y-6 md:w-[83%] xl:w-[60%] lg:w-[70%] gap-x-5 justify-center items-center flex-col md:flex-row">
+          <img
+            src={foto}
+            loading="lazy"
+            className="w-full rounded-md md:w-[60%] lg:w-[50%]"
+            alt=""
+            data-aos="fade-right"
+          />
+          <div
+            className="flex flex-col font-mono text-slate-50 2xl:gap-6"
+            data-aos="fade-left"
+          >
+            <p className="lg:text-xl text-sm font-bold xl:text-3xl font-mono">
+              MSIB Batch 3 Frontend Javascript{" "}
+              <span className="text-base">Binar Academy</span>
+            </p>
+            <p className="text-xs lg:text-sm xl:text-xl">
+              1 August 2022 - 31 December 2022
+            </p>
+            <p className="text-slate-50 text-sm font-mono md:text-justify 2xl:text-2xl lg:text-base xl:text-xl">
+              I&apos;ve successfully completed the Frontend JavaScript Bootcamp
+              at Binar Academy, hosted by Kampus Merdeka. It has broadened my
+              horizons in web development and deepened my understanding of
+              JavaScript, the foundation of modern web app development.
+            </p>
+          </div>
         </div>
-      </ContentLayout>
+      </div>
     </>
   );
 };
