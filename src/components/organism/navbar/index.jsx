@@ -8,7 +8,7 @@ import { Button } from "../../atom/button";
 export const Navbar = () => {
   const [dropDown, setDropDown] = useState(false);
 
-  const isDrowDown = () => {
+  const isDropDown = () => {
     setDropDown(!dropDown);
   };
 
@@ -85,7 +85,7 @@ export const Navbar = () => {
       {/* Mobile */}
       <nav className="block md:hidden">
         <Button
-          click={isDrowDown}
+          click={isDropDown}
           className={`flex items-center  rounded-md text-white hover:bg-slate-200 dark:hover:bg-slate-500`}
         >
           <BsList />
@@ -93,7 +93,7 @@ export const Navbar = () => {
         <NavDropDown className={`-mx-[40vw] rounded-md`} isDropDown={dropDown}>
           <ul
             className="flex flex-col rounded-md gap-2"
-            onMouseLeave={isDrowDown}
+            onMouseLeave={isDropDown}
           >
             {navList.map((nav) => (
               <NavLink to={nav.link} key={nav.id} className={hamNavClass}>

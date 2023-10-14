@@ -4,8 +4,11 @@ import { BsGithub } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { Button } from "../../components/atom/button";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 export const Home = () => {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const githubLink = () => {
     window.open("https://github.com/luthfiahmdf", "_blank");

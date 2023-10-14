@@ -67,15 +67,10 @@ export const Skills = () => {
               data-aos-once="true"
               className="flex flex-col  gap-x-5 items-center border-2 w-[70vw] md:w-[30%] lg:w-[40%] p-2 rounded-md  duration-300 ease-in-out"
             >
-              <p
-                data-aos="fade-down"
-                className="text-[12rem] lg:text-[5rem] xl:text-[10rem] md:text-[7rem]"
-              >
+              <p className="text-[12rem] lg:text-[5rem] xl:text-[10rem] md:text-[7rem]">
                 {item.icon}
               </p>
-              <p className="text-[1rem]" data-aos="fade-down">
-                {item.name}
-              </p>
+              <p className="text-[1rem]">{item.name}</p>
             </div>
           ))}
         </div>
