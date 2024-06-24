@@ -18,11 +18,11 @@ export const Navbar = () => {
       navItem: "home",
       link: "/",
     },
-    {
-      id: 2,
-      navItem: "about",
-      link: "/about",
-    },
+    // {
+    //   id: 2,
+    //   navItem: "about",
+    //   link: "/about",
+    // },
     {
       id: 3,
       navItem: "awards",
@@ -38,11 +38,11 @@ export const Navbar = () => {
       navItem: "experience",
       link: "/experience",
     },
-    {
-      id: 6,
-      navItem: "interest",
-      link: "/interest",
-    },
+    // {
+    //   id: 6,
+    //   navItem: "interest",
+    //   link: "/interest",
+    // },
   ];
 
   const navClass = ({ isActive }) => {

@@ -17,6 +17,12 @@ export const Experience = () => {
       name: "Dicoding Academy",
       description: `My experience in taking the "Getting Started Programming With Java" course at Dicoding Academy on October 23, 2021 was incredibly valuable. During this course, I learned the fundamentals of programming with Java, including the language's structure and basic programming concepts. This marked my initial step in learning the Java programming language and has helped me build a strong foundation in software development.`,
     },
+    {
+      title: "React And React Native For Front End Developer ",
+      date: "31 December 2023",
+      name: "Hacktiv8",
+      description: `This is my experience attending the "React and React Native for Front End Developer" course at Hacktiv8 on December 31, 2023. During this course, I deepened my knowledge in frontend development using React and React Native. I learned various cutting-edge concepts and techniques in web and mobile development that have proven to be invaluable in my career.`,
+    },
   ];
   useEffect(() => {
     Aos.init();
