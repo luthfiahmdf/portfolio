@@ -1,6 +1,6 @@
 import AOS from "aos";
 import { BsGithub } from "react-icons/bs";
-import { AiOutlineInstagram } from "react-icons/ai";
+// import { AiOutlineInstagram } from "react-icons/ai";
 import { Button } from "../../components/atom/button";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
@@ -12,9 +12,9 @@ export const Home = () => {
   const githubLink = () => {
     window.open("https://github.com/luthfiahmdf", "_blank");
   };
-  const instagramLink = () => {
-    window.open("https://instagram.com/luuuthfi_", "_blank");
-  };
+  // const instagramLink = () => {
+  //   window.open("https://instagram.com/luuuthfi_", "_blank");
+  // };
   return (
     <>
       <Helmet>
