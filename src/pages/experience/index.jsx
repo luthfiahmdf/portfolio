@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import Aos from "aos";
-import { useEffect } from "react";
 
 export const Experience = () => {
   const exp = [
@@ -23,9 +21,7 @@ export const Experience = () => {
       description: `This is my experience attending the "React and React Native for Front End Developer" course at Hacktiv8 on December 31, 2023. During this course, I deepened my knowledge in frontend development using React and React Native. I learned various cutting-edge concepts and techniques in web and mobile development that have proven to be invaluable in my career.`,
     },
   ];
-  useEffect(() => {
-    Aos.init();
-  }, []);
+
   return (
     <>
       <Helmet>
@@ -45,7 +41,6 @@ export const Experience = () => {
             <div
               key={idx}
               className="flex flex-col font-mono text-slate-50 2xl:gap-6 border-2 border-slate-50 p-3"
-              data-aos="fade-left"
             >
               <p className="lg:text-xl text-sm font-bold xl:text-3xl font-mono">
                 {item?.title}

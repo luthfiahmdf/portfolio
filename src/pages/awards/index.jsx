@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-import Aos from "aos";
-import { Fragment, useEffect } from "react";
+
+import { Fragment } from "react";
 import { Button } from "../../components/atom/button";
 
 export const Awards = () => {
@@ -32,9 +32,6 @@ export const Awards = () => {
     },
   ];
 
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <>
       <Helmet>
@@ -45,10 +42,7 @@ export const Awards = () => {
         <div className="flex w-[90%] my-[10vh] gap-y-6 md:w-[83%] xl:w-[60%] lg:w-[70%] gap-x-5 justify-center items-center flex-col ">
           {awards.map((item, idx) => (
             <Fragment key={idx}>
-              <div
-                className="flex flex-col font-mono gap-y-3 text-slate-50 2xl:gap-6"
-                data-aos="fade-left"
-              >
+              <div className="flex flex-col font-mono gap-y-3 text-slate-50 2xl:gap-6">
                 <p className="lg:text-xl text-sm font-bold xl:text-3xl font-mono">
                   {item?.title} <span className="text-base">{item?.name}</span>
                 </p>

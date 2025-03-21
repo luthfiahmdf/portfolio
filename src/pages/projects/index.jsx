@@ -8,32 +8,32 @@ export const Projects = () => {
     {
       projectName: "E-Terbangin (Discontinue)",
       projectLink: "https://luthfiahmdf.vercel.app/",
-      image: "/porto.png",
+      image: "/porto.webp",
       github: "https://github.com/BinarFEBE6/front-end/tree/main/binar-befe6",
     },
     {
       projectName: "MovieKu",
       projectLink: "https://movie-ku-react-redux.vercel.app/",
-      image: "/porto2.png",
+      image: "/porto2.webp",
       github: "https://github.com/luthfiahmdf/MovieKu-ReactRedux",
     },
     {
       projectName: "POS Kopi Lentera (Discontinue)",
       // projectLink: "https://luthfiahmdf.vercel.app/",
       github: "https://github.com/luthfiahmdf/POSLentera-FE",
-      image: "/porto3.png",
+      image: "/porto3.webp",
     },
     {
       projectName: "Uninus SuperApps (Discontinue)",
       // projectLink: "https://luthfiahmdf.vercel.app/",
       github: "https://github.com/uninus-opensource/uninus-superapp",
-      image: "/porto4.png",
+      image: "/porto4.webp",
     },
     {
       projectName: "Pathatu (On Going)",
       isDisable: true,
       // projectLink: "https://luthfiahmdf.vercel.app/",
-      image: "/porto5.png",
+      image: "/porto5.webp",
     },
   ];
   return (
