@@ -39,9 +39,9 @@ export const Home = () => {
               <BsGithub className="text-4xl" />
             </Button>
 
-            <Button click={instagramLink}>
+            {/* <Button click={instagramLink}>
               <AiOutlineInstagram className="text-4xl" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
