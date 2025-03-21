@@ -1,4 +1,3 @@
-import { Navbar } from "../../components/organism/navbar";
 import { Helmet } from "react-helmet";
 import Aos from "aos";
 import { Fragment, useEffect } from "react";
@@ -42,7 +41,6 @@ export const Awards = () => {
         <title>Experience</title>
         <meta name="description" content="Experience Page" />
       </Helmet>
-      <Navbar />
       <div className="w-full flex min-h-screen justify-center items-center bg-zinc-900">
         <div className="flex w-[90%] my-[10vh] gap-y-6 md:w-[83%] xl:w-[60%] lg:w-[70%] gap-x-5 justify-center items-center flex-col ">
           {awards.map((item, idx) => (

@@ -1,4 +1,3 @@
-import { Navbar } from "../../components/organism/navbar";
 import AOS from "aos";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -22,7 +21,6 @@ export const Home = () => {
         <title>Luthfiahmdf</title>
         <meta name="description" content="Home Page" />
       </Helmet>
-      <Navbar />
 
       <div className="flex flex-col  gap-x-5 items-center justify-center w-full min-h-screen bg-zinc-900">
         <div

@@ -6,7 +6,6 @@ import {
   BiLogoTailwindCss,
   BiLogoTypescript,
 } from "react-icons/bi";
-import { Navbar } from "../../components/organism/navbar";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Aos from "aos";
@@ -57,7 +56,6 @@ export const Skills = () => {
         <title>Skills</title>
         <meta name="description" content="Skills Page" />
       </Helmet>
-      <Navbar />
       <div className="w-full flex min-h-screen justify-center items-center bg-zinc-900">
         <div className="text-xl md:text-2xl my-[15vh] md:mb-0 gap-6 flex-wrap font-semibold items-center justify-center font-mono gap-y-5 flex   md:mt-[6vh] w-[80vw] md:w-[70%] lg:w-[50vw] dark:text-slate-200">
           {skill?.map((item, index) => (

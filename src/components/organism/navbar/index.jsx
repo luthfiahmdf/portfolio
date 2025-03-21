@@ -38,6 +38,11 @@ export const Navbar = () => {
       navItem: "experience",
       link: "/experience",
     },
+    {
+      id: 6,
+      navItem: "project",
+      link: "/projects",
+    },
     // {
     //   id: 6,
     //   navItem: "interest",

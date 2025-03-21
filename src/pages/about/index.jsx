@@ -1,7 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
-import { Navbar } from "../../components/organism/navbar";
 
 export const About = () => {
   AOS.init();
@@ -12,7 +11,6 @@ export const About = () => {
         <title>About</title>
         <meta name="description" content="About Page" />
       </Helmet>
-      <Navbar />
       <div className="flex flex-col  gap-x-5 items-center justify-center w-full min-h-screen bg-zinc-900 ">
         <div
           data-aos="fade-down"
